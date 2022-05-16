@@ -19,6 +19,14 @@
     width: 100%;
 }
 
+@media all and (max-width: 750px) {
+    .heading {
+        height: 100%;
+        width: 100%;
+        /* margin-top: 10%; */
+    }
+}
+
 .title h1 {
     font-size: 40px;
     font-family: 'Lato', sans-serif;
