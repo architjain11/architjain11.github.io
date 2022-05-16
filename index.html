@@ -1,18 +1,139 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Archit Jain</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <!-- Animate.css CDN for Header animation of Fade In -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" />
+
+    <!-- Bootstrap 4.5.0 CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- AOS Animation css link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 <body>
-    <div class="header">archit jain</div>
-    <div class="container">
-        <div class="text-wrapper">
-            <div class="text-1 text">hey, i'm archit</div><br>
-            <div class="text-2 text">. . .</div>  
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="clouds"></div>
+    <div class="title">
+        <h1>Hey there, I am Archit</h1>
+        <h1></h1>
+    </div>
+
+    <!-- ABOUT ME -->
+    <div class="container" data-aos="fade-in" data-aos-offset="200" data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
+        <div class="text-center">
+            <h2 class="pt-3 pb-2 text-color-normal">ABOUT <span class="text-bold-900">ME</span></h2>
+            <p class="py-3" style="text-align: left;">
+                Using code as my choice of weapon in the war zone of solving puzzles, I have been working to sharpen
+                that blade. Pursuing B.Tech in Computer Science at one of the finest engineering colleges of the
+                country, NSUT (formerly NSIT), I have added quite some technical skills to my arsenal, including a
+                strong foundation of Data Structures and Algorithms, introduction to which started back in the 2nd
+                semester of my degree and Web Technology which kicked off in 3rd Semester. I am especially keen on
+                exploring the world of Python and am intrigued by its applications ranging from machine learning to web
+                development.
+                <br><br>
+                I strongly believe that the world of technology would not be shaped by the faint hearted but rather bold
+                and ambitious coders. My ability to translate academic knowledge into innovative practical solutions is
+                bound to make me stand out from the rest.
+            </p>
         </div>
     </div>
+
+    <!-- PROJECTS SECTION -->
+    <div class="container mt-5 py-5 hide-overflow">
+
+        <div data-aos="fade-in" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-out"
+            class="text-center py-3">
+            <h2 class="pt-3 pb-2 text-color-normal">MY <span class="text-bold-900">PROJECTS</span></h2>
+        </div>
+
+        <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-out"
+            class="row my-5 justify-content-center">
+            <div class="col-lg-4 col-md-5 order-1">
+                <img src="assets/proj0.png" class="w-100" alt="Hospital Management Project image">
+            </div>
+            <div class="col-lg-6 col-md-7 col-sm-12 align-self-center py-3 pt-md-0 px-3 order-12">
+                <div class="card-block px-3">
+                    <h4 class="card-title">Hospital Management System</h4>
+                    <p class="card-text">
+                        A system written in Python which connects to MySQL and can be used to manage the hospital's work system. Docker environments are used to do the same
+                    </p>
+                    <button class="My-Button btn mx-2">
+                        <a target="_blank" href="https://github.com/architjain11/Hospital-Management-System">View on Github</a>
+                    </button>
+                </div>
+            </div>
+        </div><br>
+
+        <div data-aos="fade-left" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-out"
+            class="row my-5 justify-content-center">
+            <div class="col-lg-6 col-md-7  col-sm-12 align-self-center pt-3 py-3 pt-md-0 px-3 order-md-1 order-12">
+                <div class="card-block px-3">
+                    <h4 class="card-title">Portfolio Website</h4>
+                    <p class="card-text">
+                        A personal portfolio website hosted on Github
+                    </p>
+                    <button class="My-Button btn mx-2">
+                        <a target="_blank" href="https://github.com/architjain11/Portfolio">View on Github</a>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-5 order-md-12 order-1">
+                <img src="/assets/proj1.png" class="w-100" alt="Portfolio Website image">
+            </div>
+        </div><br>
+
+        <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-out"
+            class="row my-5 justify-content-center">
+            <div class="col-lg-4 col-md-5 order-1">
+                <img src="/assets/proj2.png" class="w-100" alt="Tic Tac Toe Game image">
+            </div>
+            <div class="col-lg-6 col-md-7 col-sm-12 align-self-center py-3 pt-md-0 px-3 order-12">
+                <div class="card-block px-3">
+                    <h4 class="card-title">Tic Tac Toe Game</h4>
+                    <p class="card-text">
+                        A simple game of tic tac toe built in JS using basic HTML and CSS for an interactive gameplay. 
+                    </p>
+                    <button class="My-Button btn mx-2">
+                        <a target="_blank" href="https://github.com/architjain11/Tic-Tac-Toe-Game">View on Github</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <p class="footer_title">Built by Archit Jain</p>
+        <div class="footer_social">
+            <a target=”_blank” href="https://www.linkedin.com/in/jainarchit11/" class="footer_icon"><i
+                    class='bx bxl-linkedin'></i></a> &ensp;
+            <a target=”_blank” href="https://github.com/architjain11" class="footer_icon"><i
+                    class='bx bxl-github'></i></a> &ensp;
+            <a target=”_blank” href="https://twitter.com/codingspirits" class="footer_icon"><i
+                    class='bx bxl-twitter'></i></a>
+        </div>
+        <p>&#169; copyright all rights reserved</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/733c06764a.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
+
+
 </html>
