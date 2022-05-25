@@ -47,6 +47,18 @@
     display: block;
     position: relative;
     z-index: 3;
+
+    /* Adding animation */
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    animation: type 5s steps(60, end);
+}
+
+@keyframes type {
+    from {
+        width: 0;
+    }
 }
 
 .body {
